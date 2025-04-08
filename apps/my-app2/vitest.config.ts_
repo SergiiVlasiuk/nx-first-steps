@@ -1,0 +1,14 @@
+import { defineConfig } from 'vitest/config';
+import solidPlugin from 'vite-plugin-solid';
+
+export default defineConfig({
+  plugins: [solidPlugin()],
+  test: {
+    name: 'my-app2-vitest',
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: ['./test-setup.ts'],
+    // setupFiles: './src/test-setup.ts',
+    include: ['src/**/*.spec.{ts,tsx}'],
+  },
+});

@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        // "type": "pwa-node",
+        "type": "node",
+        "request": "launch",
+        "name": "Vitest: Debug my-app2 tests",
+        "program": "${workspaceFolder}/node_modules/vitest/vitest.mjs",
+        "args": [
+          "run",
+          "--config",
+        //   "apps/my-app2/vitest.config.ts",
+          "apps/my-app2/vite.config.ts",
+          "--inspect"
+        ],
+        "autoAttachChildProcesses": true,
+        "cwd": "${workspaceFolder}",
+        "smartStep": true,
+        "skipFiles": ["<node_internals>/**", "node_modules/**"]
+      }
+    ]
+  }
+  
+// {
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+
+//         {
+//             "type": "node",
+//             "request": "launch",
+//             "name": "Launch Program",
+//             "skipFiles": [
+//                 "<node_internals>/**"
+//             ],
+//             "program": "${workspaceFolder}/apps/my-app2/src/app/app.element.spec.tsx",
+//             "outFiles": [
+//                 "${workspaceFolder}/**/*.js"
+//             ]
+//         }
+//     ]
+// }

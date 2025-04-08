@@ -1,0 +1,18 @@
+{
+  "name": "@my-nx-ws/my-app2",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "my-app2"
+  },
+  "dependencies": {
+    "solid-js": "^1.9.5"
+  },
+  "devDependencies": {
+    "@solidjs/testing-library": "^0.8.10",
+    "babel-preset-solid": "^1.9.5",
+    "vite-plugin-solid": "^2.11.6",
+    "vitest": "^3.1.1",
+    "vitest-dom": "^0.1.1"
+  }
+}

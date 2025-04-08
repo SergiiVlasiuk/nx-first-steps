@@ -1,0 +1,4 @@
+{
+  // "presets": ["@nx/js/babel"]
+  "presets": ["solid"] // заміна @nx/js/babel на solid
+}

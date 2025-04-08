@@ -1,0 +1,11 @@
+{
+  "name": "@my-nx-ws/my-app1",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "my-app1"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.86.3"
+  }
+}

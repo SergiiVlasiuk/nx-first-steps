@@ -2,5 +2,18 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./libs/my-lib"
+    },
+    {
+      "path": "./libs/my-lib2"
+    },
+    {
+      "path": "./apps/my-app1"
+    },
+    {
+      "path": "./apps/my-app2"
+    }
+  ]
 }
