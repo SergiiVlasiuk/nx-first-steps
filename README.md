@@ -48,9 +48,19 @@ As result I almost followed this way to make my-app2 working with `solid.js`.
 
 ## 6. Results
 
+### 6.1. Execute all tests
 You can execute all units from the root directory
 
+    rm -rf **/node_modules **/dist
+    yarn
     yarn nx run-many --target=test --all
+
+### 6.2. Build
+For example:
+
+    yarn nx run my-app2:build
+
+### 6.3. VSCode testing plugin
 
 If you want use special VSCode plugins like `Vitest` `vitest.dev` - you may face with VSCode issue when Vitest Explorer VSCode Extension doesn't read your testing configuration correctly and it leads to `❌ Client-only API called on the server side` issue in VSCode.
 

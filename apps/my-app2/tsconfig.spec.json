@@ -4,15 +4,18 @@
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "outDir": "./out-tsc/vitest",
+    "lib": ["esnext", "DOM"],
     "types": [
       "vitest/globals",
       "vitest/importMeta",
       "vite/client",
-      "node",
+      // "node",
       "vitest",
-      "vitest-dom",  // додано типи для vitest-dom
+      // "vitest-dom",  // додано типи для vitest-dom, але vitest-dom (станом на v0.1.1) не містить типів (index.d.ts відсутній), тому користуємо ./types/vitest-dom.d.ts
       "vitest-dom/extend-expect",
+      "./types/vitest-dom",
     ],
+    "module": "esnext",
     "moduleResolution": "bundler"
   },
   "include": [

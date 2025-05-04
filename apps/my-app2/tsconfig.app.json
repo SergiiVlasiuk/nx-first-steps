@@ -6,8 +6,11 @@
     "jsxImportSource": "solid-js",
 
     "outDir": "dist",
-    "types": ["node", "vitest", "vitest-dom"],
+    // "types": ["node", "vitest", "vitest-dom"],
+    "types": ["vite", "vite/client"],
     "rootDir": "src",
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "module": "esnext",
     "moduleResolution": "bundler",
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
   },
