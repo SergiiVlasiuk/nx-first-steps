@@ -1,0 +1,4 @@
+dist/
+node_modules/
+build/
+eslint.config.mjs
